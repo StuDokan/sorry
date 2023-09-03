@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say Sorry 1000 Times</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #output {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>I love you jaan please sorry </h1>
+    <button id="sorryButton">Please click </button>
+    <div id="output"></div>
+
+    <script>
+        document.getElementById("sorryButton").addEventListener("click", function () {
+            const outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = "";
+
+            for (let i = 1; i < 1001; i++) {
+                const sorryText = document.createElement("p");
+                sorryText.textContent =`${i} ,  "I love you rimi , maf kre dew"`;
+                outputDiv.appendChild(sorryText);
+            }
+        });
+    </script>
+</body>
+</html>
